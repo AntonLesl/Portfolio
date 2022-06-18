@@ -1,0 +1,11 @@
+Invalid or missing arguments. Please try again. 
+
+Usage: java CircuitTracer [-s | -q] [-c | -g] <filename> 
+
+First argument: -s (stack) or -q (queue) 
+
+Second argument: -c (console output) or -g (gui output) 
+
+Third argument: <filename> (full name of the file) 
+
+-g (A GUI output was not implemented and is currently not available at this time. Use -c for all console outputs).
