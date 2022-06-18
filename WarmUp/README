@@ -1,0 +1,79 @@
+****************
+* Grid Monitor
+* CS 221-
+* 1/15/2022
+* Anton Leslie
+**************** 
+
+OVERVIEW:
+
+ Grid Monitor is a program that reads a file of data into a 2d array
+ supporting basic set collection functionality.
+ Grid Monitor Test confirms that the data grid is a valid, fully functional way of creating a data table that montiors cells to check if they are dangerous or not.
+
+
+INCLUDED FILES:
+
+ GridMonitor.java - source file
+ GridMonitorInterface.java source file
+ GridMonitorTest.java - source file
+ README - this file
+
+
+BUILDING AND RUNNING:
+
+ From the directory containing all source files, compile the test
+ class (and all dependent classes) with the command:
+ $ javac GridMonitorTest.java
+
+ Run the compiled GridMonitorTest class with the command:
+ $ java GridMonitorTest
+
+ Console output will report which tests of GridMonitorTest passed or failed.
+ 
+
+PROGRAM DESIGN:
+
+ GridMonitor implements GridMonitorInterface and inherents the Methods from its parent class and gives documentation of what each method is intended to do.
+First you are instructed to create a constructor that should attempt to open and read the specified plain-text file containing current grid levels using one or more Scanners. That does not catch any FileNotFoundexceptions and just allows them to pass straight through.
+
+Then you will proceed to the next phase of design this program and read the javadocs from the implementation which would be then to instruct you to setup the sum method which takes the surrounding cells and add them together and this will be needed for the next method. 
+Which takes that sum and averages it by 4 and then passes that data to the delta method. 
+which takes that method and creates a delta which will help you create the bounds for the next method which determines if the cells are dangerous.
+Using the data you recieved from the previous method you will now start to determine what cells are dangerous.
+
+ 
+
+TESTING:
+
+GridMonitorTest was the primary mechanism for testing GridMonitor. GridMonitorTest was
+ written before GridMonitorTest, so test-driven development helped ensure that
+ all method were being tested from the start in order to move from method to method.
+
+ Scenarios being tested by SetTester include:
+//tests using a 3x3 sample grid
+ //tests for a second valid grid that differs from
+// sample.txt by not having identical row and column dimensions
+//tests to confirm that parsing can handle a file with values
+// specified as doubles
+ Additional scenarios would be beneficial, such as adding duplicates to
+ sets with multiple elements, but time did not permit more extensive
+ testing.
+//test encapsulation from get___() methods
+//tests to confirm expected Exceptions
+ Not all tests are currently passing, but work is still underway to fix
+ remaining bugs.
+
+
+DISCUSSION:
+ 
+ This was a great project to start the semester off it help bring confidence and help us get prepared for whats to come.
+ Also it allowed us to see insight on what to expect via time frame on how we should go about our schedule of doing the assignments. 
+ In the future im actually going to be more interested in learning more about data analytics.
+ Although working with the data table was a little bit tricky it was hard to figure out the surrounding squares. 
+ In result once that was done everything just fell into place and it was smoothe sailing from then on although i wasnt able to complete the encapsulation that section was a little bit tricky.
+ 
+
+One thing im looking forward to learning about is the debugger that wouldve been a huge help in this project with errors that took me forever to find like wrong symbol adding when i should be subtracting. But in the end result this project was very good to start off with built a little confidence tto carry me through the rest of the semester so hopefully i can continue improving and get better.
+
+ 
